@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); /* Para usar em descrições em textos que tem mais conteúdo, usar font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap'); /* Para titulos e Frases unicas colocar font-family: 'Roboto', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title{
+    font-size: 45px;
+    font-family: Roboto, sans-serif;
+    color: blue;
+    text-align: center;
+    margin-top: 100px;
+}
+
+ body{
+  background-color: #3C165B;
+ }
+
+  .id{
+    background-color:#341150;
+    height: 600px;
+    width: 1500px;
+    border-radius: 20px;
+    border-style: inset;
+    margin: auto;
+  }
+
+
+@media screen and (max-width: 600px){
+    
+}

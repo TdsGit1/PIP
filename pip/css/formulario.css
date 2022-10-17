@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); /* Para usar em descrições em textos que tem mais conteúdo, usar font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap'); /* Para titulos e Frases unicas colocar font-family: 'Roboto', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(60, 22, 91, 36);
+    color: rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+}
+.BP { 
+    margin-top: 60px;
+    text-align: center;
+    font-size: 30px;
+    height:50px;
+    width: 300px;
+    border-width: 2px;
+    background-color: transparent;
+    border-color: white;
+    color: rgba(255, 255, 255, 0.432);
+    border-radius: 7px;
+}
+.BI {
+    text-align: center;
+    font-size: 30px;
+    margin-left: 500px;
+    height:50px;
+    width: 300px;
+    border-width: 2px;
+    background-color: transparent;
+    border-color: white;
+    color: rgba(255, 255, 255, 0.432);
+    border-radius: 7px;
+    
+}
+.BI:hover {
+    background-color: rgba(0, 0, 0, 0.253);
+    color: rgb(255, 255, 255);
+}
+.BP:hover{
+    background-color: rgba(0, 0, 0, 0.253);
+    color: rgb(255, 255, 255);
+}
+.t1 {
+    margin-top: 80px;
+    font-size: 20px;
+    border-radius: 7px;
+    border-color: white;
+    background-color: transparent;
+    text-align: center;
+    padding-top: 15px;
+    height:50px;
+    width: 300px;
+}
+
+.BF{
+    text-align: center;
+    font-size: 30px;
+    height:50px;
+    width: 300px;
+    border-style: solid;
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    margin-top: 55px;
+    border-radius: 7px;
+}
+
+.BF:hover{
+    background-color: rgba(0, 0, 0, 0.253);
+    color: white;
+}
+
+.alinhamento{
+    margin-right: 250PX;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    text-align: center;
+    width: 10px;
+}
+
+
+fileInput {
+    position: fixed;
+    top: -1000px;
+}
+fileInput{
+    border-style: solid;
+    background-color: transparent;
+    height: 500px;
+    width: 500px;
+    border: white;
+}
