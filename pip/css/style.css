@@ -1,78 +1,142 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); /* Para usar em descrições em textos que tem mais conteúdo, usar font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap'); /* Para titulos e Frases unicas colocar font-family: 'Roboto', sans-serif; */
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     background-color: rgba(60, 22, 91, 36);
-
 }
 
-.container1 {
-    position : relative;
-    width : 100%;
-    display : flex;
-    align-items : center;
-    justify-content : center;
-    flex-wrap: nowrap;
-    padding : 30px; 
-    background-color: #000214;
-}
-  
-.container1 .card {
-    position: relative;
-    max-width : 300px;
-    height : 215px;  
-    background-color : #292828;
-    margin : 30px 10px;
-    padding : 20px 15px;
-    display : flex;
-    flex-direction: column;
-    box-shadow : 0 5px 20px rgba(0,0,0,0.5);
-    transition : 0.3s ease-in-out;
-    border-radius : 15px;
-}
-.container1 .card:hover {
-    height : 400px;    
-}
-  
-  
-.container1 .card .image {
-    position : relative;
-    width : 260px;
-    height : 260px;
-    
-    top : -40%;
-    left: 4px;
-    box-shadow : 0 5px 20px rgba(0,0,0,0.2);
-    z-index : 1;
-}
-  
-.container1 .card .image img {
-    max-width : 100%;
-    border-radius : 15px;
+.fundo{
+    background-color: #341150;
+    width: 1500px;
+    height: 800px;
+    margin: auto;
+    margin-top: 80px;
+    display: flex;
+    border-radius: 20px;
 }
 
-.container1 .card .content {
-    position : relative;
-    top : -140px;
-    padding : 10px 15px;
-    color : white;
-    text-align : center;
-    
-    visibility : hidden;
-    opacity : 0;
-    transition : 0.3s ease-in-out;
-      
+.logo{
+    width: 747px;
+    height: 800px;
+    border-left: none;
+    text-align: center;
+    justify-content: center;
 }
-  
-.container1 .card:hover .content {
-     margin-top : 30px;
-     visibility : visible;
-     opacity : 1;
-     transition-delay: 0.2s;
+.borda{
+    width: 6px;
+    height: 800px;
+    background-color: white;
+}
+.login{
+    width: 747px;
+    height: 800px;
+    text-align: center;
+}
+h2{
+    margin-top: 30px;
+    color: #d3a0fd;
+    text-shadow: 0px 0px 6px #d3a0fd;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 4mm;
+    font-size: 30px;
+    font-weight: 600;
+}
+.logo img{
+    margin-top: 140px;
+}
+.conteudo{
+    width: 547px;
+    height: 640px;
+    background-color: #52098b;
+    margin: auto;
+    margin-top: 80px;
+    border-radius: 30px;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(255, 255, 255, 0.640);
+}
+
+.input-icons i {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+
+.input-icons {
+    width: 100%;
+    margin-bottom: 15px;
     
+}
+
+.icon {
+    padding: 15px;
+    color: rgba(255, 255, 255, 0.640);
+    min-width: 50px;
+    text-align: center;
+}
+
+.input-field {
+    width: 450px;
+    height: 50px;
+    padding: 20px;
+    font-size: 17px;
+    text-align: center;
+    background-color: #341150;
+    border-color: white;
+    border-radius: 5px;
+    color: white;
+}
+button{
+    margin-top: 30px;
+    height: 70px;
+    width: 200px;
+    font-size: 25px;
+    border-radius: 40px;
+    background-image: linear-gradient(to right, #6c11b4, #d5cbc6);
+    border: none;
+    cursor: pointer;
+    transition: filter .2s;
+    margin-bottom: 30px;
+}
+button:hover{
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+h5{
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+label{
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+.senha{
+    margin-bottom: 15px;
+}
+p,a{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.senha a:hover{
+    color: #4fc0e8;
+}
+.criar a:hover{
+    color: #4fc0e8;
+}
+.email{
+    margin-bottom: 10px;
+}
+.espaco{
+    margin-top: 30px;
 }

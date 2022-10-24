@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); /* Para usar em descrições em textos que tem mais conteúdo, usar font-family: 'Roboto', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap'); /* Para titulos e Frases unicas colocar font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 
 *{
     margin: 0;
@@ -7,28 +7,226 @@
     box-sizing: border-box;
 }
 
-.title{
-    font-size: 45px;
-    font-family: Roboto, sans-serif;
-    color: blue;
-    text-align: center;
-    margin-top: 100px;
-}
-
- body{
+html{
   background-color: #3C165B;
+  font-size: 62.5%;
  }
 
   .id{
+    align-items: center;
     background-color:#341150;
-    height: 600px;
-    width: 1500px;
-    border-radius: 20px;
-    border-style: inset;
+    height: 700px;
+    width: 90%;
+    max-width: 1500px;
+    border-radius: 30px; 
+    box-shadow:  20px 20px #52098B;
+    margin: auto;
+    margin-top: 130px;
+  }
+
+  .id:hover{
+    box-shadow: 0 0 10px #d78dda, 0 0 30px #d78dda, 0 0 70px #d78dda;
+  }
+
+  .titleav{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4.5rem;
+    color: white;
+    margin-left: 180px;
+    margin-top: 30px;
+  }
+
+  .subt{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.0rem;
+    color: white;
+    margin-left:110px;
+    margin-top: -50px;
+  }
+
+  .ok{
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    width: 180px;
+    height: 50px;
+    background-image: linear-gradient(to right, #CD7A9A , #6C11B4);
+    color: white;
+    font-size: 2.5rem;
+    margin-top: 100px;
+  }
+
+  .no{
+    cursor: pointer;
+    margin-left: 40px;
+    background-color: #341150;
+    width: 181px;
+    height: 50px;
+    color: white;
+    font-size: 2.5rem;
+    border-color: #CD7A9A;
+    border-style: solid;
+    border-width: 7px;
+    border-radius: 30px;
+  }
+
+  .dh{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    color: darkgrey;
+    margin-left: 112px;
+  }
+
+  .avaliacao{
+    margin-left: 180px;
+    display: flex;
+  }
+  
+  .star-icon{
+    list-style-type: none;
+    cursor: pointer;
+    color: #A45ADF;
+    font-size: 50px;
+    margin-top: -150px;
+  }
+ 
+  .star-icon::before{
+    content:"\2605";
+  }
+
+  .star-icon.ativo ~ .star-icon::before{
+    content:"\2606";
+  }
+  
+  .avaliacao:hover .star-icon::before{
+    content: "\2605";
+  }
+
+  .star-icon:hover ~ .star-icon::before{
+    content:"\2606";
+  }
+
+  .text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: white;
+    margin-left: 300px;
+    margin-top: 150px;
+  }
+
+  .img{
+    margin-left: 1420px;
+    width: 110px;
+    margin-top: -50px;
+  }
+
+  .av{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 40px;
+  color: white;
+  margin-top: 300px;
+  margin-left: 250px;
+  }
+
+  .av2{
+    font-family:'Open Sans', sans-serif;
+    font-size: 15px;
+    color: white;
+    margin-left: 220px;
+  }
+
+  * {box-sizing:border-box}
+
+  .slideshow-container {
+    padding: 30px;
+    bottom: 590px;
+    left: 380px;
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+  }
+
+  .mySlides {
+    display: none;
+  }
+
+  .prev, .next {
+    position: absolute;
+    cursor: pointer;
+    top: 230px;
+    width: auto;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    left: 500px;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev{
+    right: 500px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: #CD7A9A;
+  }
+
+  .numbertext {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+
+  .active, .dot:hover {
+    background-color: #A45ADF;
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  .imgs{
+    height: 450px;
+    width: 450px;
     margin: auto;
   }
 
 
-@media screen and (max-width: 600px){
-    
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+@media screen and (max-width: 425px){
+html{
+  font-size: 50%;
 }
+.ok{
+  width: 100px;
+  height: 50px;
+}
+.no{
+  width: 100px;
+  height: 50px;
+}}

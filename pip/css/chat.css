@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); /* Para usar em descrições em textos que tem mais conteúdo, usar font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap'); /* Para titulos e Frases unicas colocar font-family: 'Roboto', sans-serif; */
+
+:root{
+  --cp-e1: #341150;
+  --cp-e2: #52098b;
+}
+body{
+  background-color: rgba(60, 22, 91, 36);
+  color: rgb(0, 0, 0);
+  font-family: 'Roboto', sans-serif;
+}
+
+ul, p, h1, h2{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+
+
+.material-symbols-outlined{
+  color: #fff;
+  background-color: var(--cp-e2);
+  border-radius: 50%;
+  padding: 20px;
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 5000,
+    'GRAD' 0,
+    'opsz' 1000;
+  
+}
+
+.chat-container{
+  max-width: 1800px;
+  padding-top: 40px;
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.chat-icons{
+  background-color: var(--cp-e1);
+  box-shadow: 10px 0 0 0;
+  max-width: 200px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 30px;
+}
+
+.chat-icons li{
+  background-color: var(--cp-e2);
+}
+
+.chat-icons li:last-child{
+  background: none;
+  padding-top: 320px;
+}
+
+[placeholder]{
+  padding: 20px;
+  width: 300px;
+  border-radius: 100px;
+}
+
+.users{
+  background-color: var(--cp-e1);
+  border-radius: 50px;
+  gap: 40px;
+  display: grid;
+  justify-content: center;
+  box-shadow: 18px 0 0 0;
+}
+
+.users-input{
+display: grid;
+grid-template-columns: 1fr auto;
+
+}
+
+.users ul{
+  display: flex;
+  padding-top: 30px;
+  flex-direction: column;
+  gap: 20px;
+  color: #fff;
+}
+
+.users li{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  background-color: #000;
+  padding: 5px;
+  border-radius: 80px;
+  margin-left: 10px;
+}
+
+.users h2{
+  grid-column: 2;
+}
+
+.users p{
+  grid-column: 2;
+}
+
+.users img{
+  width: 80px;
+  padding-left: 40px;
+}
+.users i{
+  padding-left: 50px;
+}
+
+.users li:hover{
+  background-color: var(--);
+}

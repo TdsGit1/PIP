@@ -1,8 +1,131 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); /* Para usar em descrições em textos que tem mais conteúdo, usar font-family: 'Roboto', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap'); /* Para titulos e Frases unicas colocar font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+html{
+  background-color: #3C165B;
+  font-size: 62.5%;
+ }
+
+  .id{
+    align-items: center;
+    background-color:#341150;
+    height: 700px;
+    width: 90%;
+    max-width: 1500px;
+    border-radius: 30px; 
+    box-shadow:  20px 20px #52098B;
+    margin: auto;
+    margin-top: 130px;
+  }
+
+  .id:hover{
+    box-shadow: 0 0 10px #d78dda, 0 0 30px #d78dda, 0 0 70px #d78dda;
+  }
+
+  .titleav{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4.5rem;
+    color: white;
+    margin-left: 180px;
+    margin-top: 30px;
+  }
+
+  .subt{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.0rem;
+    color: white;
+    margin-left:110px;
+    margin-top: -50px;
+  }
+
+  .ok{
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    width: 180px;
+    height: 50px;
+    background-image: linear-gradient(to right, #CD7A9A , #6C11B4);
+    color: white;
+    font-size: 2.5rem;
+    margin-top: 130px;
+  }
+
+  .no{
+    cursor: pointer;
+    margin-left: 40px;
+    background-color: #341150;
+    width: 181px;
+    height: 50px;
+    color: white;
+    font-size: 2.5rem;
+    border-color: #CD7A9A;
+    border-style: solid;
+    border-width: 7px;
+    border-radius: 30px;
+  }
+
+  .dh{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    color: darkgrey;
+    margin-left: 110px;
+  }
+
+  .avaliacao{
+    margin-left: 180px;
+    display: flex;
+  }
+  
+  .text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: white;
+    margin-left: 300px;
+    margin-top: 150px;
+  }
+
+  .img{
+    margin-left: 1420px;
+    width: 110px;
+    margin-top: -50px;
+    position: sticky;
+  }
+
+  .av{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 40px;
+  color: white;
+  margin-top: 120px;
+  margin-left: 250px;
+
+  }
+.container{
+    height: 490px;
+    width: 100%;
+    max-width: 1500px;
+}
+.tabelinha{
+    width: 100%;
+    font-size: 42px;
+    color: white;
+    text-align: center;
+}
+@media screen and (max-width: 425px){
+html{
+  font-size: 50%;
+}
+
+.ok{
+  width: 100px;
+  height: 50px;
+}
+.no{
+  width: 100px;
+  height: 50px;
+}}
